@@ -1,7 +1,7 @@
 #lang racket
 ;Scheme最終課題
 ;http://www.stdio.h.kyoto-u.ac.jp/~sakura/scheme/8p.html
-; convはの展開を行う関数.ppp は展開された多項式を標準の形で表示する関数.
+; convは式の展開を行う関数.ppp は展開された多項式を標準の形で表示する関数.
 ;> (conv '(^ (+ (* 2 x) y) 3)) 
 ;    => '((8 x x x) (12 x x y) (6 x y y) (1 y y y))
 ;> (ppp  (conv '(^ (+ (* 2 x) y) 3)))
