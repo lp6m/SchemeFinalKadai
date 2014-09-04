@@ -1,6 +1,13 @@
 #lang racket
 ;Scheme最終課題
-;冗長なコードもあるかと思いますが,無事に式を展開することができます.
+;http://www.stdio.h.kyoto-u.ac.jp/~sakura/scheme/8p.html
+; convはの展開を行う関数.ppp は展開された多項式を標準の形で表示する関数.
+;> (conv '(^ (+ (* 2 x) y) 3)) 
+;    => '((8 x x x) (12 x x y) (6 x y y) (1 y y y))
+;> (ppp  (conv '(^ (+ (* 2 x) y) 3)))
+;    => 8*x^3  +12*x^2*y +6*x*y^2   +y^3  
+
+
 ;kadai28-1 esort1
 ;   esort1は，ソートされた2つの単項式をマージして変数をソートする関数である．
 ;   要するに，2つの単項式の積を求める関数である．
